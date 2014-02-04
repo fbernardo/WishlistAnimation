@@ -18,6 +18,7 @@
 		3F6BA31218A05E9D007D6FD8 /* UIBarButtonItem+WishListAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6BA31118A05E9D007D6FD8 /* UIBarButtonItem+WishListAnimation.m */; };
 		3F6BA31418A062AD007D6FD8 /* iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6BA31318A062AD007D6FD8 /* iPhone@2x.png */; };
 		3F6BA31618A066EA007D6FD8 /* detailButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6BA31518A066EA007D6FD8 /* detailButton@2x.png */; };
+		3F6BA31818A06B0B007D6FD8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6BA31718A06B0B007D6FD8 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		3F6BA31118A05E9D007D6FD8 /* UIBarButtonItem+WishListAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WishListAnimation.m"; sourceTree = "<group>"; };
 		3F6BA31318A062AD007D6FD8 /* iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone@2x.png"; sourceTree = "<group>"; };
 		3F6BA31518A066EA007D6FD8 /* detailButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detailButton@2x.png"; sourceTree = "<group>"; };
+		3F6BA31718A06B0B007D6FD8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		3F6BA2E218A05D59007D6FD8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F6BA31718A06B0B007D6FD8 /* Default-568h@2x.png */,
 				3F6BA31518A066EA007D6FD8 /* detailButton@2x.png */,
 				3F6BA31318A062AD007D6FD8 /* iPhone@2x.png */,
 				3F6BA2E318A05D59007D6FD8 /* WishlistAnimation-Info.plist */,
@@ -166,6 +169,7 @@
 				3F6BA31418A062AD007D6FD8 /* iPhone@2x.png in Resources */,
 				3F6BA31618A066EA007D6FD8 /* detailButton@2x.png in Resources */,
 				3F6BA2E618A05D59007D6FD8 /* InfoPlist.strings in Resources */,
+				3F6BA31818A06B0B007D6FD8 /* Default-568h@2x.png in Resources */,
 				3F6BA2EF18A05D59007D6FD8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
