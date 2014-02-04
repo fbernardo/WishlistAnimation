@@ -15,23 +15,10 @@
 		3F6BA2EC18A05D59007D6FD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6BA2EB18A05D59007D6FD8 /* AppDelegate.m */; };
 		3F6BA2EF18A05D59007D6FD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6BA2ED18A05D59007D6FD8 /* Main.storyboard */; };
 		3F6BA2F218A05D59007D6FD8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6BA2F118A05D59007D6FD8 /* ViewController.m */; };
-		3F6BA2F418A05D59007D6FD8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6BA2F318A05D59007D6FD8 /* Images.xcassets */; };
-		3F6BA2FB18A05D59007D6FD8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6BA2FA18A05D59007D6FD8 /* XCTest.framework */; };
-		3F6BA2FC18A05D59007D6FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6BA2DB18A05D59007D6FD8 /* Foundation.framework */; };
-		3F6BA2FD18A05D59007D6FD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6BA2DF18A05D59007D6FD8 /* UIKit.framework */; };
-		3F6BA30518A05D59007D6FD8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F6BA30318A05D59007D6FD8 /* InfoPlist.strings */; };
-		3F6BA30718A05D59007D6FD8 /* WishlistAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6BA30618A05D59007D6FD8 /* WishlistAnimationTests.m */; };
+		3F6BA31218A05E9D007D6FD8 /* UIBarButtonItem+WishListAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6BA31118A05E9D007D6FD8 /* UIBarButtonItem+WishListAnimation.m */; };
+		3F6BA31418A062AD007D6FD8 /* iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6BA31318A062AD007D6FD8 /* iPhone@2x.png */; };
+		3F6BA31618A066EA007D6FD8 /* detailButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6BA31518A066EA007D6FD8 /* detailButton@2x.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3F6BA2FE18A05D59007D6FD8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3F6BA2D018A05D59007D6FD8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3F6BA2D718A05D59007D6FD8;
-			remoteInfo = WishlistAnimation;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3F6BA2D818A05D59007D6FD8 /* WishlistAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishlistAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,12 +34,11 @@
 		3F6BA2EE18A05D59007D6FD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F6BA2F018A05D59007D6FD8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3F6BA2F118A05D59007D6FD8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3F6BA2F318A05D59007D6FD8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3F6BA2F918A05D59007D6FD8 /* WishlistAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WishlistAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F6BA2FA18A05D59007D6FD8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		3F6BA30218A05D59007D6FD8 /* WishlistAnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WishlistAnimationTests-Info.plist"; sourceTree = "<group>"; };
-		3F6BA30418A05D59007D6FD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3F6BA30618A05D59007D6FD8 /* WishlistAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WishlistAnimationTests.m; sourceTree = "<group>"; };
+		3F6BA31018A05E9D007D6FD8 /* UIBarButtonItem+WishListAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WishListAnimation.h"; sourceTree = "<group>"; };
+		3F6BA31118A05E9D007D6FD8 /* UIBarButtonItem+WishListAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WishListAnimation.m"; sourceTree = "<group>"; };
+		3F6BA31318A062AD007D6FD8 /* iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone@2x.png"; sourceTree = "<group>"; };
+		3F6BA31518A066EA007D6FD8 /* detailButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detailButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,16 +52,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F6BA2F618A05D59007D6FD8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F6BA2FB18A05D59007D6FD8 /* XCTest.framework in Frameworks */,
-				3F6BA2FD18A05D59007D6FD8 /* UIKit.framework in Frameworks */,
-				3F6BA2FC18A05D59007D6FD8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				3F6BA2E118A05D59007D6FD8 /* WishlistAnimation */,
-				3F6BA30018A05D59007D6FD8 /* WishlistAnimationTests */,
 				3F6BA2DA18A05D59007D6FD8 /* Frameworks */,
 				3F6BA2D918A05D59007D6FD8 /* Products */,
 			);
@@ -93,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				3F6BA2D818A05D59007D6FD8 /* WishlistAnimation.app */,
-				3F6BA2F918A05D59007D6FD8 /* WishlistAnimationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,12 +86,13 @@
 		3F6BA2E118A05D59007D6FD8 /* WishlistAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				3F6BA31018A05E9D007D6FD8 /* UIBarButtonItem+WishListAnimation.h */,
+				3F6BA31118A05E9D007D6FD8 /* UIBarButtonItem+WishListAnimation.m */,
 				3F6BA2EA18A05D59007D6FD8 /* AppDelegate.h */,
 				3F6BA2EB18A05D59007D6FD8 /* AppDelegate.m */,
 				3F6BA2ED18A05D59007D6FD8 /* Main.storyboard */,
 				3F6BA2F018A05D59007D6FD8 /* ViewController.h */,
 				3F6BA2F118A05D59007D6FD8 /* ViewController.m */,
-				3F6BA2F318A05D59007D6FD8 /* Images.xcassets */,
 				3F6BA2E218A05D59007D6FD8 /* Supporting Files */,
 			);
 			path = WishlistAnimation;
@@ -126,28 +101,12 @@
 		3F6BA2E218A05D59007D6FD8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F6BA31518A066EA007D6FD8 /* detailButton@2x.png */,
+				3F6BA31318A062AD007D6FD8 /* iPhone@2x.png */,
 				3F6BA2E318A05D59007D6FD8 /* WishlistAnimation-Info.plist */,
 				3F6BA2E418A05D59007D6FD8 /* InfoPlist.strings */,
 				3F6BA2E718A05D59007D6FD8 /* main.m */,
 				3F6BA2E918A05D59007D6FD8 /* WishlistAnimation-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3F6BA30018A05D59007D6FD8 /* WishlistAnimationTests */ = {
-			isa = PBXGroup;
-			children = (
-				3F6BA30618A05D59007D6FD8 /* WishlistAnimationTests.m */,
-				3F6BA30118A05D59007D6FD8 /* Supporting Files */,
-			);
-			path = WishlistAnimationTests;
-			sourceTree = "<group>";
-		};
-		3F6BA30118A05D59007D6FD8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3F6BA30218A05D59007D6FD8 /* WishlistAnimationTests-Info.plist */,
-				3F6BA30318A05D59007D6FD8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -172,24 +131,6 @@
 			productReference = 3F6BA2D818A05D59007D6FD8 /* WishlistAnimation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3F6BA2F818A05D59007D6FD8 /* WishlistAnimationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3F6BA30D18A05D59007D6FD8 /* Build configuration list for PBXNativeTarget "WishlistAnimationTests" */;
-			buildPhases = (
-				3F6BA2F518A05D59007D6FD8 /* Sources */,
-				3F6BA2F618A05D59007D6FD8 /* Frameworks */,
-				3F6BA2F718A05D59007D6FD8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3F6BA2FF18A05D59007D6FD8 /* PBXTargetDependency */,
-			);
-			name = WishlistAnimationTests;
-			productName = WishlistAnimationTests;
-			productReference = 3F6BA2F918A05D59007D6FD8 /* WishlistAnimationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,11 +139,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = fbernardo;
-				TargetAttributes = {
-					3F6BA2F818A05D59007D6FD8 = {
-						TestTargetID = 3F6BA2D718A05D59007D6FD8;
-					};
-				};
 			};
 			buildConfigurationList = 3F6BA2D318A05D59007D6FD8 /* Build configuration list for PBXProject "WishlistAnimation" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -218,7 +154,6 @@
 			projectRoot = "";
 			targets = (
 				3F6BA2D718A05D59007D6FD8 /* WishlistAnimation */,
-				3F6BA2F818A05D59007D6FD8 /* WishlistAnimationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,17 +163,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F6BA2F418A05D59007D6FD8 /* Images.xcassets in Resources */,
+				3F6BA31418A062AD007D6FD8 /* iPhone@2x.png in Resources */,
+				3F6BA31618A066EA007D6FD8 /* detailButton@2x.png in Resources */,
 				3F6BA2E618A05D59007D6FD8 /* InfoPlist.strings in Resources */,
 				3F6BA2EF18A05D59007D6FD8 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3F6BA2F718A05D59007D6FD8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F6BA30518A05D59007D6FD8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,27 +179,12 @@
 			files = (
 				3F6BA2F218A05D59007D6FD8 /* ViewController.m in Sources */,
 				3F6BA2EC18A05D59007D6FD8 /* AppDelegate.m in Sources */,
+				3F6BA31218A05E9D007D6FD8 /* UIBarButtonItem+WishListAnimation.m in Sources */,
 				3F6BA2E818A05D59007D6FD8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F6BA2F518A05D59007D6FD8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F6BA30718A05D59007D6FD8 /* WishlistAnimationTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3F6BA2FF18A05D59007D6FD8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3F6BA2D718A05D59007D6FD8 /* WishlistAnimation */;
-			targetProxy = 3F6BA2FE18A05D59007D6FD8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3F6BA2E418A05D59007D6FD8 /* InfoPlist.strings */ = {
@@ -288,14 +201,6 @@
 				3F6BA2EE18A05D59007D6FD8 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3F6BA30318A05D59007D6FD8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F6BA30418A05D59007D6FD8 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -399,48 +304,6 @@
 			};
 			name = Release;
 		};
-		3F6BA30E18A05D59007D6FD8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WishlistAnimation.app/WishlistAnimation";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WishlistAnimation/WishlistAnimation-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "WishlistAnimationTests/WishlistAnimationTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		3F6BA30F18A05D59007D6FD8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WishlistAnimation.app/WishlistAnimation";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WishlistAnimation/WishlistAnimation-Prefix.pch";
-				INFOPLIST_FILE = "WishlistAnimationTests/WishlistAnimationTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -458,14 +321,6 @@
 			buildConfigurations = (
 				3F6BA30B18A05D59007D6FD8 /* Debug */,
 				3F6BA30C18A05D59007D6FD8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		3F6BA30D18A05D59007D6FD8 /* Build configuration list for PBXNativeTarget "WishlistAnimationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3F6BA30E18A05D59007D6FD8 /* Debug */,
-				3F6BA30F18A05D59007D6FD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
