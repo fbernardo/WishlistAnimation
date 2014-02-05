@@ -13,9 +13,14 @@
 + (UIBarButtonItem *)wlBarButtonWithImage:(UIImage *)image target:(id)target action:(SEL)selector {
     //Generate selected image
     UIGraphicsBeginImageContextWithOptions(image.size, NO, image.scale);
-    CGContextSetBlendMode(UIGraphicsGetCurrentContext(), kCGBlendModeMultiply);
-    CGContextSetAlpha(UIGraphicsGetCurrentContext(), .2);
-    CGContextDrawImage(UIGraphicsGetCurrentContext(), (CGRect) {.size = image.size}, image.CGImage);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    CGContextSetBlendMode(ctx, kCGBlendModeMultiply);
+    CGContextSetAlpha(ctx, .2);
+    CGContextScaleCTM(ctx, 1, -1);
+    CGContextTranslateCTM(ctx, 0, -image.size.height);
+    
+    CGContextDrawImage(ctx, (CGRect) {.size = image.size}, image.CGImage);
     UIImage *selectedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
