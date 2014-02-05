@@ -11,9 +11,13 @@
 
 @implementation ViewController
 
-- (IBAction)addToWishList:(UIBarButtonItem *)barButton {
-    
-    [barButton wishListAnimationWithImage:[UIImage imageNamed:@"iPhone.png"] completionBlock:^{
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem wlBarButtonWithImage:[UIImage imageNamed:@"detailButton.png"] target:self action:@selector(addToWishList:)];
+}
+
+- (void)addToWishList:(id)sender {
+    [self.navigationItem.rightBarButtonItem wishListAnimationWithImage:[UIImage imageNamed:@"iPhone.png"] completionBlock:^{
         NSLog(@"finished animation");
     }];
 

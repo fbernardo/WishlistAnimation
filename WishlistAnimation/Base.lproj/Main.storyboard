@@ -17,13 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FuV-Ty-gn9">
-                        <barButtonItem key="rightBarButtonItem" image="detailButton.png" id="Ce1-7G-HhW">
-                            <connections>
-                                <action selector="addToWishList:" destination="vXZ-lx-hvc" id="L4H-pt-ZfT"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="FuV-Ty-gn9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -48,9 +42,6 @@
             <point key="canvasLocation" x="248" y="92"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="detailButton.png" width="21" height="21"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

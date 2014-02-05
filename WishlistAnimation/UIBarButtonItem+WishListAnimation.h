@@ -12,4 +12,7 @@
 
 - (void)wishListAnimationWithImage:(UIImage *)image completionBlock:(void (^)())completionBlock;
 
+//the sender of the selector message will be the UIButton custom view
++ (UIBarButtonItem *)wlBarButtonWithImage:(UIImage *)image target:(id)target action:(SEL)selector;
+
 @end

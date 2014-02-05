@@ -10,10 +10,33 @@
 
 @implementation UIBarButtonItem (WishListAnimation)
 
++ (UIBarButtonItem *)wlBarButtonWithImage:(UIImage *)image target:(id)target action:(SEL)selector {
+    //Generate selected image
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, image.scale);
+    CGContextSetBlendMode(UIGraphicsGetCurrentContext(), kCGBlendModeMultiply);
+    CGContextSetAlpha(UIGraphicsGetCurrentContext(), .2);
+    CGContextDrawImage(UIGraphicsGetCurrentContext(), (CGRect) {.size = image.size}, image.CGImage);
+    UIImage *selectedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    //Create images with the template rendering mode (for tintColor)
+    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    
+    //Create button
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:image forState:UIControlStateNormal];
+    [button setImage:selectedImage forState:UIControlStateHighlighted];
+    [button setImage:selectedImage forState:UIControlStateSelected];
+    [button sizeToFit];
+    [button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+    
+    return [[UIBarButtonItem alloc] initWithCustomView:button];
+}
+
 - (void)wishListAnimationWithImage:(UIImage *)image completionBlock:(void (^)())completionBlock {
-    UIView *view = [self valueForKeyPath:@"view"];
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    CGRect frame = [window convertRect:view.bounds fromView:view];
+    CGRect frame = [window convertRect:self.customView.bounds fromView:self.customView];
     
     CGSize imageSize = (CGSize) {.width = 88, .height = 88};
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
@@ -37,19 +60,17 @@
 }
 
 - (void)signalAnimationWithCompletionBlock:(void (^)())completionBlock {
-    UIView *view = [self valueForKeyPath:@"view"];
-    
-    CGAffineTransform initialTransform = view.transform;
+    CGAffineTransform initialTransform = self.customView.transform;
     
     [UIView animateKeyframesWithDuration:.4 delay:0 options:0 animations:^{
         [UIView addKeyframeWithRelativeStartTime:0 relativeDuration:.2 animations:^{
-            view.transform = CGAffineTransformScale(initialTransform, 1.4, 1.4);
+            self.customView.transform = CGAffineTransformScale(initialTransform, 1.4, 1.4);
         }];
         [UIView addKeyframeWithRelativeStartTime:.2 relativeDuration:.2 animations:^{
-            view.transform = CGAffineTransformScale(initialTransform, 1, 1);
+            self.customView.transform = CGAffineTransformScale(initialTransform, 1, 1);
         }];
     } completion:^(BOOL finished){
-        view.transform = initialTransform;
+        self.customView.transform = initialTransform;
         if (completionBlock) completionBlock();
     }];
 }

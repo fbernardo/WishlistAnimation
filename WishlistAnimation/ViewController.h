@@ -10,6 +10,5 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)addToWishList:(UIBarButtonItem *)barButton;
 
 @end
