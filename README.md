@@ -1,6 +1,11 @@
 # App Store's "Add to Wish List" animation
 
 
+## Example
+
+![image](https://raw2.github.com/fbernardo/WishlistAnimation/master/example.gif)
+
+
 ## Usage
 
 
