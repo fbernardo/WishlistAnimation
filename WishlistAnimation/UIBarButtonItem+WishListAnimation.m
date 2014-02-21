@@ -39,6 +39,45 @@
     return [[UIBarButtonItem alloc] initWithCustomView:button];
 }
 
+- (void)wlSetImage:(UIImage *)image animated:(BOOL)animated {
+    //Generate selected image
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, image.scale);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    CGContextSetBlendMode(ctx, kCGBlendModeMultiply);
+    CGContextSetAlpha(ctx, .2);
+    CGContextScaleCTM(ctx, 1, -1);
+    CGContextTranslateCTM(ctx, 0, -image.size.height);
+    
+    CGContextDrawImage(ctx, (CGRect) {.size = image.size}, image.CGImage);
+    UIImage *selectedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    //Create images with the template rendering mode (for tintColor)
+    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    
+    UIButton *button = (UIButton *) self.customView;
+    void (^block)() = ^{
+        [button setImage:image forState:UIControlStateNormal];
+        [button setImage:selectedImage forState:UIControlStateHighlighted];
+        [button setImage:selectedImage forState:UIControlStateSelected];
+    };
+    
+    if (animated) {
+        [UIView transitionWithView:button
+                          duration:.4
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:block
+                        completion:nil];
+    } else {
+        block();
+    }
+    
+    
+    [button sizeToFit];
+}
+
 - (void)wishListAnimationWithImage:(UIImage *)image completionBlock:(void (^)())completionBlock {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     CGRect frame = [window convertRect:self.customView.bounds fromView:self.customView];
