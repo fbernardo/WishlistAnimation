@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1A124B19052B8900F0CDFF /* UIImage+Transforms.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A124A19052B8900F0CDFF /* UIImage+Transforms.m */; };
 		3F6BA2DC18A05D59007D6FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6BA2DB18A05D59007D6FD8 /* Foundation.framework */; };
 		3F6BA2DE18A05D59007D6FD8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6BA2DD18A05D59007D6FD8 /* CoreGraphics.framework */; };
 		3F6BA2E018A05D59007D6FD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6BA2DF18A05D59007D6FD8 /* UIKit.framework */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F1A124919052B8900F0CDFF /* UIImage+Transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Transforms.h"; sourceTree = "<group>"; };
+		3F1A124A19052B8900F0CDFF /* UIImage+Transforms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Transforms.m"; sourceTree = "<group>"; };
 		3F6BA2D818A05D59007D6FD8 /* WishlistAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishlistAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F6BA2DB18A05D59007D6FD8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3F6BA2DD18A05D59007D6FD8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,6 +91,8 @@
 		3F6BA2E118A05D59007D6FD8 /* WishlistAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				3F1A124919052B8900F0CDFF /* UIImage+Transforms.h */,
+				3F1A124A19052B8900F0CDFF /* UIImage+Transforms.m */,
 				3F6BA31018A05E9D007D6FD8 /* UIBarButtonItem+WishListAnimation.h */,
 				3F6BA31118A05E9D007D6FD8 /* UIBarButtonItem+WishListAnimation.m */,
 				3F6BA2EA18A05D59007D6FD8 /* AppDelegate.h */,
@@ -140,7 +145,7 @@
 		3F6BA2D018A05D59007D6FD8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = fbernardo;
 			};
 			buildConfigurationList = 3F6BA2D318A05D59007D6FD8 /* Build configuration list for PBXProject "WishlistAnimation" */;
@@ -182,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F6BA2F218A05D59007D6FD8 /* ViewController.m in Sources */,
+				3F1A124B19052B8900F0CDFF /* UIImage+Transforms.m in Sources */,
 				3F6BA2EC18A05D59007D6FD8 /* AppDelegate.m in Sources */,
 				3F6BA31218A05E9D007D6FD8 /* UIBarButtonItem+WishListAnimation.m in Sources */,
 				3F6BA2E818A05D59007D6FD8 /* main.m in Sources */,
@@ -214,7 +220,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -253,7 +258,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -327,6 +331,7 @@
 				3F6BA30C18A05D59007D6FD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
